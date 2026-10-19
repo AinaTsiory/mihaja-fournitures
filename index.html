@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mihaja Fournitures – Fournitures scolaires et de bureau à Madagascar</title>
+<meta name="description" content="Mihaja Fournitures, à Antananarivo : agrafeuses, désagrafeuses, cutters, sous-mains et articles de bureau. Livraison partout à Madagascar, commande via WhatsApp.">
+<meta property="og:title" content="Mihaja Fournitures">
+<meta property="og:description" content="Fournitures scolaires et de bureau. Commandez via WhatsApp.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2317365D'/%3E%3Cpath d='M7 20h18v4H7zM9 12h14l2 6H7z' fill='%23F4A62A'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="nav" id="accueil-top">
+  <div class="wrap nav-in">
+    <a class="logo" href="#accueil" aria-label="Mihaja Fournitures, accueil">
+      <svg width="34" height="34" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#17365D"/><path d="M7 20h18v4H7z" fill="#F4A62A"/><path d="M9 12h14l2 6H7z" fill="#fff"/></svg>
+      <span>Mihaja <b>Fournitures</b></span>
+    </a>
+    <nav id="menu" class="menu" aria-label="Navigation principale">
+      <a href="#accueil">Accueil</a><a href="#produits">Produits</a><a href="#apropos">À propos</a><a href="#livraison">Livraison</a><a href="#contact">Contact</a>
+      <a class="btn btn-wa menu-wa" href="https://wa.me/261345521919" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    </nav>
+    <div class="nav-tools">
+      <button class="cart-btn" id="cartOpen" aria-label="Ouvrir le panier" aria-haspopup="dialog">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 4h2l2.4 11h10.2L20 7H6.2"/><circle cx="9" cy="19.5" r="1.5"/><circle cx="17" cy="19.5" r="1.5"/></svg>
+        <span class="count" id="cartCount">0</span>
+      </button>
+      <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="accueil">
+  <div class="wrap hero-in">
+    <div>
+      <h1>Un espace de travail bien organisé assure une excellente performance !</h1>
+      <p>Découvrez nos fournitures scolaires et de bureau pour étudier, travailler et organiser votre quotidien avec efficacité.</p>
+      <div class="actions">
+        <a class="btn btn-accent" href="#produits">Découvrir nos produits</a>
+        <a class="btn btn-wa" href="https://wa.me/261345521919?text=Bonjour%20Mihaja%20Fournitures%20!" target="_blank" rel="noopener noreferrer">Commander sur WhatsApp</a>
+      </div>
+    </div>
+    <svg class="hero-art" viewBox="0 0 360 260" role="img" aria-label="Illustration d'un bureau avec agrafeuse, cutter et sous-main">
+      <rect x="10" y="190" width="340" height="14" rx="7" fill="#F4A62A"/>
+      <rect x="40" y="120" width="190" height="70" rx="8" fill="#fff" opacity=".12"/>
+      <path d="M60 175h150a10 10 0 0 0 10-10v-8a10 10 0 0 0-10-10H110l-50-25z" fill="#F4A62A"/>
+      <rect x="60" y="175" width="160" height="15" rx="4" fill="#fff"/>
+      <rect x="250" y="95" width="70" height="95" rx="8" fill="#fff"/><rect x="262" y="110" width="46" height="6" rx="3" fill="#17365D"/><rect x="262" y="126" width="46" height="6" rx="3" fill="#17365D" opacity=".5"/><rect x="262" y="142" width="30" height="6" rx="3" fill="#17365D" opacity=".5"/>
+      <path d="M255 60l40-12 6 20-40 12z" fill="#F4A62A"/><rect x="40" y="215" width="280" height="8" rx="4" fill="#fff" opacity=".25"/>
+    </svg>
+  </div>
+</section>
+
+<section class="wrap perks" aria-label="Nos atouts">
+  <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v4H4zM6 9v10h12V9"/></svg><p>Fournitures scolaires et de bureau</p></div>
+  <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 7h11v9H2zM13 10h5l3 3v3h-8"/></svg><p>Livraison partout à Madagascar, selon les modalités convenues</p></div>
+  <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6 7-12a7 7 0 0 0-14 0c0 6 7 12 7 12z"/></svg><p>Récupération possible en ville</p></div>
+  <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg><p>Contact direct avec le vendeur sur WhatsApp</p></div>
+</section>
+
+<section class="wrap" id="produits">
+  <h2>Nos produits</h2>
+  <div class="promo" role="note"><strong>Offre spéciale :</strong> une boîte d'agrafes offerte pour l'achat simultané d'une agrafeuse et d'une désagrafeuse !</div>
+  <div class="grid" id="productGrid"></div>
+</section>
+
+<section class="about" id="apropos">
+  <div class="wrap narrow">
+    <h2>À propos</h2>
+    <p>Mihaja Fournitures est une entreprise d'Antananarivo spécialisée dans la vente de fournitures scolaires et de bureau. Notre mission : aider les étudiants, les établissements scolaires, les entreprises et les particuliers à trouver des fournitures adaptées à leurs besoins, et à organiser un espace de travail agréable.</p>
+  </div>
+</section>
+
+<section class="wrap narrow" id="livraison">
+  <h2>Livraison et récupération</h2>
+  <ul class="list">
+    <li>Nous sommes situés à Antananarivo, Madagascar.</li>
+    <li>La livraison est proposée partout à Madagascar.</li>
+    <li>Les frais et les délais sont à confirmer auprès du vendeur.</li>
+    <li>La récupération en ville est possible, selon les modalités convenues.</li>
+  </ul>
+  <button class="btn btn-wa" id="deliveryBtn" type="button">Organiser ma livraison</button>
+</section>
+
+<section class="wrap" id="contact">
+  <h2>Contact</h2>
+  <div class="contacts">
+    <article class="card contact"><h3>WhatsApp</h3><p>+261 34 55 219 19</p><a class="btn btn-wa" href="https://wa.me/261345521919" target="_blank" rel="noopener noreferrer">Contacter sur WhatsApp</a></article>
+    <article class="card contact"><h3>Facebook</h3><p>Mihaja Fournitures</p><a class="btn btn-primary" href="https://www.facebook.com/profile.php?id=61574577369075&locale=fr_FR" target="_blank" rel="noopener noreferrer">Visiter notre page Facebook</a></article>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap foot-in">
+    <div><strong>Mihaja Fournitures</strong><p>Fournitures scolaires et de bureau, à Antananarivo.</p><p>Livraison partout à Madagascar.</p></div>
+    <nav aria-label="Pied de page"><a href="#accueil">Accueil</a> <a href="#produits">Produits</a> <a href="#apropos">À propos</a> <a href="#livraison">Livraison</a> <a href="#contact">Contact</a><br><a href="https://wa.me/261345521919" target="_blank" rel="noopener noreferrer">WhatsApp</a> <a href="https://www.facebook.com/profile.php?id=61574577369075&locale=fr_FR" target="_blank" rel="noopener noreferrer">Facebook</a></nav>
+  </div>
+  <p class="copy">© <span id="year"></span> Mihaja Fournitures. Tous droits réservés.</p>
+</footer>
+
+<div class="overlay" id="overlay" hidden></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle" aria-hidden="true">
+  <div class="drawer-head"><h2 id="cartTitle">Mon panier</h2><button class="icon-btn" id="cartClose" aria-label="Fermer le panier">✕</button></div>
+  <div class="drawer-body" id="cartBody"></div>
+  <div class="drawer-foot">
+    <div id="cartSummary"></div>
+    <p class="msg" id="cartMsg" role="alert"></p>
+    <button class="btn btn-wa block" id="checkoutBtn" type="button">Valider via WhatsApp</button>
+    <button class="btn btn-ghost block" id="continueBtn" type="button">Continuer mes achats</button>
+  </div>
+</aside>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="js/script.js"></script>
+</body>
+</html>
